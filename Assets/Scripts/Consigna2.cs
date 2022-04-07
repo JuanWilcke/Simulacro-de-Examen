@@ -20,10 +20,12 @@ public class Consigna2 : MonoBehaviour
         if (totalprecio>dinero)
         {
             Debug.Log("El total a pagar es mayor al monto disponible");
+            Debug.Log("Te falta" + (totalprecio - dinero));
         }
         if (totalprecio<=dinero)
         {
             Debug.Log("El monto es suficiente para pagar el total");
+            Debug.Log("Te sobra" + (dinero - totalprecio));
         }
     }
 
